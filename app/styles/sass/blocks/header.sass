@@ -1,0 +1,50 @@
+.header
+  position: fixed
+  top: 0
+  left: 0
+  width: 100%
+  height: auto
+  background: $accent
+  padding: 39px 0
+  z-index: 1
+  transition: $trs
+  &.active
+    padding: 20px 0
+.nav
+  position: relative
+  display: flex
+  justify-content: space-between
+  ul
+    margin: 0
+    padding: 0
+    list-style: none
+  &__left,
+  &__right
+    display: flex
+  &__item
+    position: relative
+  &__link
+    text-transform: uppercase
+    display: inline-block
+    color: $textcolor
+    letter-spacing: 0.5px
+    padding: 12px 24px
+    transition: $trs
+    scroll-behavior: smooth
+    &:hover
+      text-decoration: none
+      background: #FBECEA
+      color: $textcolor
+    &.active
+      background: #FBECEA
+.choose-lang
+  position: absolute
+  top: 46px
+  left: 0
+  transform: scale(0)
+  transition: $trs
+  &.show
+    transform: scale(1)
+  li
+    a
+      background: white
