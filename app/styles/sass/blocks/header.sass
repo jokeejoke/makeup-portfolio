@@ -6,14 +6,21 @@
   height: auto
   background: $accent
   padding: 39px 0
-  z-index: 1
+  z-index: 99
   transition: $trs
   &.active
     padding: 20px 0
+    .logotype
+      top: -13px
+    .mobileHamburger, .moblie-choose-lang
+      height: 80px
 .nav
   position: relative
   display: flex
   justify-content: space-between
+  transition: $trs
+  &.show
+    transform: scale(1)
   ul
     margin: 0
     padding: 0
@@ -37,6 +44,11 @@
       color: $textcolor
     &.active
       background: #FBECEA
+    &:active,
+    &:hover,
+    &:focus
+      outline: none
+      
 .choose-lang
   position: absolute
   top: 46px
@@ -48,3 +60,86 @@
   li
     a
       background: white
+
+.moblie-choose-lang
+  position: absolute
+  top: 0
+  left: 0
+  transition: $trs
+  width: auto
+  height: 120px
+  display: none
+  ul
+    margin: 0
+    padding: 0
+    list-style: none
+    height: 100%
+    li
+      height: 100%
+      a.nav__link.lang
+        height: 100%
+        display: flex
+        align-items: center
+  .choose-lang
+    top: 100%
+    li
+      height: auto
+
+.mobileHamburger
+  position: absolute
+  right: 0
+  top: 0
+  height: 120px
+  width: 88px
+  display: flex
+  justify-content: center
+  align-items: center
+  display: none
+  transition: $trs
+  &.active
+    background: $hovercolor
+.hamburger
+  width: 30px
+  height: 1px
+  background: $textcolor
+  border-radius: 4px
+  transition: $trs
+  position: relative
+  &::after,
+  &::before
+    content: ''
+    position: absolute
+    width: 30px
+    height: 1px
+    background: $textcolor
+    border-radius: 4px
+    transition: $trs
+  &::after
+    transform: translateY(-7px)
+  &::before
+    transform: translateY(7px)
+  &.active
+    transform: translateX(-40px)
+    background: transparent
+  &.active::before
+    transform: rotate(45deg) translate(28px, -28px)
+  &.active::after
+    transform: rotate(-45deg) translate(28px, 28px)
+
+// Logotype
+.logotype
+  position: absolute
+  top: 5px
+  left: 49%
+  transform: translate(-50%, 50%)
+  font-family: Arimo
+  color: $textcolor
+  transition: $trs
+  &__title
+    font-size: 22px
+    text-transform: uppercase
+    letter-spacing: 0.05em
+  &__subtitle
+    font-size: 12px
+    text-transform: uppercase
+    letter-spacing: 0.43em

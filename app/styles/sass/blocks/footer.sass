@@ -1,0 +1,77 @@
+.footer
+  position: relative
+  text-align: center
+  padding-top: 68px
+  &__title
+    margin-bottom: 50px
+  ul
+    padding: 0
+    list-style: none
+.contacts
+  display: inline-block
+  li
+    display: flex
+    margin-bottom: 36px
+    &:last-child
+      margin-bottom: 0
+    .icon
+      width: 30px
+      height: 30px
+      margin-right: 30px
+      svg
+        width: 22px
+  &__link,
+  li
+    font-family: Arimo
+    font-size: 24px
+    color: $textcolor
+    line-height: 28px
+    letter-spacing: .05em
+  &__link
+    &:hover
+      text-decoration: none
+      color: $textcolor
+.social
+  display: flex
+  justify-content: center
+  margin: 23px 0 141px 0
+  li
+    margin: 0 20px
+  &__link
+    display: inline-block
+    transition: $trs
+    &:hover
+      transform: scale(1.2)
+    &.youtube
+      svg
+        width: 42px
+        height: 32px
+    &.instagram
+      svg
+        width: 32px
+        height: 32px
+    &.facebook
+      svg
+        width: 22px
+        height: 38px
+    svg
+      width: 42px
+  
+
+.copyright
+  position: relative
+  width: 100%
+  padding-top: 40px
+  padding-bottom: 58px
+  border: 1px solid rgba(193, 193, 193, .5)
+  .footer__logotype
+    position: relative
+    text-align: center
+    transform: none
+    left: 0
+    top: 0
+  &__text
+    margin: 12px 0 0 0
+    font-weight: 400
+    font-size: 12px
+    opacity: 0.5

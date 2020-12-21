@@ -1,0 +1,83 @@
+.about
+  position: relative
+  padding-top: 188px
+  padding-bottom: 64px
+  &__title
+    padding-left: 40px
+  &__wrapper
+    position: relative
+    display: flex
+    margin-top: -9px
+  &__text
+    position: relative
+    background: #ffffff
+    padding: 75px 25px 85px 40px
+    p
+      font-weight: 300
+      font-size: 18px
+      line-height: 32px
+      letter-spacing: 0.02em
+      color: $textcolor
+      margin-bottom: 32px
+  &__btn
+    display: inline-block
+    margin-top: 22px
+    margin-left: 8px
+    color: #B99F9C
+    font-size: 20px
+    line-height: 32px
+    transition: $trs
+    &::after
+      content: ''
+      display: block
+      bottom: 0
+      left: 0
+      width: 0
+      height: 1px
+      background: #B99F9C
+      transition: $trs
+    svg
+      margin-left: 22px
+      stroke:#B99F9C
+      transition: $trs
+    &:hover
+      color: #B99F9C
+      text-decoration: none
+    &:hover
+      &::after
+        width: 75%
+  .figure
+    position: absolute
+    top: 100%
+    left: 14%
+    &::before
+     content: ''
+     position: absolute
+     left: -4%
+     bottom: 15%
+     height: 200px
+     width: 1px
+     background: $textcolor
+     opacity: 0.5
+    &__placeholder
+      position: absolute
+      top: 20%
+      left: -10.5%
+  &__placeholder
+    transform: rotate(-90deg)
+    text-transform: uppercase
+    font-size: 14px
+    letter-spacing: 0.02em
+    opacity: 0.5
+  &__right
+    position: relative
+    .about__placeholder
+      position: absolute
+      bottom: 7.5%
+      right: -9%
+  &__image
+    max-width: 700px
+    height: auto
+    object-fit: cover
+    border-radius: 4px 4px 25% 4px
+      

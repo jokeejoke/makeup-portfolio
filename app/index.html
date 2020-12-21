@@ -13,9 +13,7 @@
 		<div class="banner__wrapper">
 			<div class="container">
 				<div class="banner__text">
-					<h1 class="banner__title">
-						skin care and makeup
-					</h1>
+					<h1 class="banner__title">skin care and makeup</h1>
 					<a href="#" class="banner__btn btn">See services</a>
 				</div>
 			</div>
@@ -23,9 +21,188 @@
 	</section>
 	<!-- End Banner -->
 
-	<section class="section scrollspy" id="about"></section>
-	<section class="section scrollspy" id="services"></section>
-	<section class="section scrollspy" id="contact"></section>
+	<!-- About me -->
+	<section class="about scrollspy" id="about">
+		<div class="container">
+			<div class="wrapper">
+				<div class="about__title section-title wow animate__fadeInUp" data-wow-duration="1s" data-wow-offset="50">About me</div>
+				<div class="about__wrapper">
+					<div class="about__left">
+						<div class="about__text wow animate__fadeInUp" data-wow-duration="1s">
+							<p>Hello! My name is Ekaterina. I’m a licensed esthetician and makeup artist based in New York.</p>
+							<p>I will help you look and feel your best!</p>
+							<a href="#" class="about__btn">
+								More about me
+								<svg width="34" height="16" viewBox="0 0 34 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M1 8L33 8M33 8L26 1M33 8L26 15" stroke-linecap="round" stroke-linejoin="round"/>
+								</svg>									
+							</a>
+							<div class="figure">
+								<div class="about__placeholder figure__placeholder">Welcome</div>
+							</div>
+						</div>
+					</div>
+					<div class="about__right wow animate__fadeIn" data-wow-duration="2s">
+						<picture>
+							<source srcset="/images/dist/about_img.webp" type="image/webp">
+							<img src="/images/dist/about_img.png" alt="alt" class="about__image wow slideInLeft">
+						</picture>
+						<div class="about__placeholder">
+							Ekaterina Ranonis
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End About me -->
+
+	<!-- Services -->
+	<section class="services scrollspy" id="services">
+		<div class="container">
+			<div class="wrapper">
+				<div class="services__title section-title wow animate__fadeInUp" data-wow-duration="1s" data-wow-offset="50">Services</div>
+				<div class="accordion wow animate__slideInUp" data-wow-duration="1s" data-wow-offset="50">
+					<div class="accordion__item">
+						<div class="accordion__header">skin care</div>
+						<div class="accordion__body">
+							<div class="accordion__content">
+								<ul>
+									<li>Deep Pore Cleansing Facial</li>
+									<li>Hydrafacial &amp; Oxygen Infusion</li>
+									<li>Diamond Microdermabrasion Facial</li>
+									<li>Microcurrent Facial</li>
+									<li>Cryo Facial</li>
+									<li>Laser Skin Rejuvenation</li>
+									<li>RF-lifting Facial</li>
+									<li>Microneedling</li>
+									<li>Chemical Peel</li>
+									<li>Laser Hair Removal</li>
+									<li>Lava Shell Facial Massage</li>
+									<li>Hot Stone Facial Massage</li>
+									<li>Laser hair removal</li>
+								</ul>
+								<a href="#">Learn more</a>
+							</div>
+						</div>
+					</div>
+					<div class="accordion__item">
+						<div class="accordion__header">makeup</div>
+						<div class="accordion__body">
+							<div class="accordion__content">
+								<div class="portfolio">
+									<a href="#" class="portfolio__item">
+										<div class="portfolio__hover">
+											Portfolio
+											<svg width="31" height="22" viewBox="0 0 31 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M1 10.8H29M29 10.8L19.8837 1M29 10.8L19.8837 20.6" stroke-width="2" stroke-linecap="round"></path>
+											</svg>
+										</div>
+										<picture>
+											<source srcset="/images/dist/makeup/girl.webp" type="image/webp">
+											<img src="/images/dist/makeup/girl.png" class="porfolio__img">
+										</picture>
+										<div class="portfolio__title">wedding makeup</div>
+									</a>
+									<a href="#" class="portfolio__item">
+										<div class="portfolio__hover">
+											Portfolio
+											<svg width="31" height="22" viewBox="0 0 31 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M1 10.8H29M29 10.8L19.8837 1M29 10.8L19.8837 20.6" stroke-width="2" stroke-linecap="round"></path>
+											</svg>
+										</div>
+										<picture>
+											<source srcset="/images/dist/makeup/girl2.webp" type="image/webp">
+											<img src="/images/dist/makeup/girl2.png" class="porfolio__img">
+										</picture>
+										<div class="portfolio__title">	commercial and fashion makeup</div>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="accordion__item">
+						<div class="accordion__header">makeup classes</div>
+						<div class="accordion__body">
+							<div class="accordion__content">
+								<p style="text-align: center;">
+									Do you want to upgrade your makeup routine? Learn how to do your own makeup. I will teach you the tricks of the trade.
+								</p>
+								<p style="text-align: center;"><a href="#">Learn more</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End Services -->
+
+	<!-- Footer -->
+	<footer class="footer scrollspy" id="contact">
+		<div class="footer__title section-title wow animate__fadeInUp" data-wow-duration="1s" data-wow-offset="50">Contact</div>
+		<ul class="contacts wow animate__fadeInUp" data-wow-duration="1s" data-wow-offset="50">
+			<li>
+				<div class="icon">
+					<svg viewBox="0 0 22 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M21 11.2273C21 19.1818 11 26 11 26C11 26 1 19.1818 1 11.2273C1 8.51483 2.05357 5.91348 3.92893 3.9955C5.8043 2.07751 8.34784 1 11 1C13.6522 1 16.1957 2.07751 18.0711 3.9955C19.9464 5.91348 21 8.51483 21 11.2273Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+						<path d="M11 14.6364C12.8409 14.6364 14.3333 13.1101 14.3333 11.2273C14.3333 9.34448 12.8409 7.81818 11 7.81818C9.15905 7.81818 7.66667 9.34448 7.66667 11.2273C7.66667 13.1101 9.15905 14.6364 11 14.6364Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+					</svg>
+				</div>
+				Brooklyn, New York
+			</li>
+			<li>
+				<div class="icon">
+					<svg viewBox="0 0 27 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M25.9992 19.7545V23.5254C26.0006 23.8755 25.9289 24.222 25.7887 24.5428C25.6484 24.8635 25.4428 25.1515 25.1848 25.3881C24.9268 25.6248 24.6223 25.805 24.2907 25.9171C23.959 26.0293 23.6076 26.0709 23.259 26.0394C19.391 25.6191 15.6755 24.2974 12.4111 22.1805C9.37402 20.2506 6.79908 17.6756 4.86917 14.6385C2.74483 11.3593 1.4228 7.62573 1.0102 3.74037C0.978791 3.39277 1.0201 3.04243 1.1315 2.71167C1.2429 2.38091 1.42196 2.07697 1.65726 1.81921C1.89256 1.56144 2.17896 1.35549 2.49822 1.21447C2.81748 1.07345 3.1626 1.00045 3.51162 1.00012H7.2826C7.89262 0.994118 8.48402 1.21014 8.94656 1.60792C9.40909 2.0057 9.71121 2.5581 9.79658 3.16215C9.95575 4.36895 10.2509 5.55386 10.6765 6.6943C10.8456 7.14421 10.8822 7.63317 10.7819 8.10324C10.6817 8.57331 10.4488 9.00479 10.1108 9.34656L8.51445 10.9429C10.3039 14.0899 12.9095 16.6955 16.0564 18.4849L17.6528 16.8885C17.9946 16.5506 18.426 16.3177 18.8961 16.2174C19.3662 16.1171 19.8551 16.1537 20.305 16.3229C21.4455 16.7484 22.6304 17.0436 23.8372 17.2028C24.4478 17.2889 25.0054 17.5965 25.4041 18.0669C25.8027 18.5374 26.0145 19.138 25.9992 19.7545Z" stroke="#1C1C1C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+					</svg>
+				</div>
+				<a href="#" class="contacts__link">+1-347-272-0697</a>
+			</li>
+			<li>
+				<div class="icon">
+					<svg viewBox="0 0 27 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M26 3.5C26 2.125 24.875 1 23.5 1H3.5C2.125 1 1 2.125 1 3.5M26 3.5V18.5C26 19.875 24.875 21 23.5 21H3.5C2.125 21 1 19.875 1 18.5V3.5M26 3.5L13.5 12.25L1 3.5" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+					</svg>
+				</div>
+				<a href="#" class="contacts__link">kateranonis@gmail.com</a>
+			</li>
+		</ul>
+		<ul class="social wow animate__fadeIn" data-wow-duration="1s">
+			<li class="social__item">
+				<a href="#" class="social__link youtube">
+					<svg viewBox="0 0 42 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M16.69 22.7235V9.27645C16.691 9.22116 16.7053 9.16713 16.7315 9.11977C16.7577 9.07241 16.7949 9.03338 16.8393 9.0066C16.8837 8.97981 16.9338 8.96621 16.9845 8.96715C17.0352 8.96809 17.0849 8.98353 17.1284 9.01194L26.8368 15.7355C26.879 15.7626 26.9139 15.8013 26.9382 15.8477C26.9625 15.8941 26.9753 15.9466 26.9753 16C26.9753 16.0534 26.9625 16.1059 26.9382 16.1523C26.9139 16.1987 26.879 16.2373 26.8368 16.2645L17.1284 22.9881C17.0849 23.0165 17.0352 23.0319 16.9845 23.0328C16.9338 23.0338 16.8837 23.0202 16.8393 22.9934C16.7949 22.9666 16.7577 22.9276 16.7315 22.8802C16.7053 22.8329 16.691 22.7788 16.69 22.7235Z" stroke="#1C1C1C" stroke-width="2"></path>
+						<path d="M33.9066 1H8.09337C4.17581 1 1 4.46101 1 8.73037V23.2696C1 27.539 4.17581 31 8.09337 31H33.9066C37.8242 31 41 27.539 41 23.2696V8.73037C41 4.46101 37.8242 1 33.9066 1Z" stroke="#1C1C1C" stroke-width="2"></path>
+					</svg>
+				</a>
+			</li>
+			<li class="social__item">
+				<a href="#" class="social__link instagram">
+					<svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M9.67857 2H22.3214V0H9.67857V2ZM22.3214 2C26.6024 2 30 5.31653 30 9.31973H32C32 4.1332 27.6265 0 22.3214 0V2ZM30 9.31973V22.6803H32V9.31973H30ZM30 22.6803C30 26.6835 26.6024 30 22.3214 30V32C27.6265 32 32 27.8668 32 22.6803H30ZM22.3214 30H9.67857V32H22.3214V30ZM9.67857 30C5.3976 30 2 26.6835 2 22.6803H0C0 27.8668 4.37346 32 9.67857 32V30ZM2 22.6803V9.31973H0V22.6803H2ZM2 9.31973C2 5.31653 5.39759 2 9.67857 2V0C4.37346 0 0 4.1332 0 9.31973H2ZM22.6483 15.996C22.6483 19.4538 19.712 22.3282 16 22.3282V24.3282C20.7361 24.3282 24.6483 20.6371 24.6483 15.996H22.6483ZM16 22.3282C12.288 22.3282 9.35165 19.4538 9.35165 15.996H7.35165C7.35165 20.6371 11.2639 24.3282 16 24.3282V22.3282ZM9.35165 15.996C9.35165 12.5383 12.288 9.66394 16 9.66394V7.66394C11.2639 7.66394 7.35165 11.355 7.35165 15.996H9.35165ZM16 9.66394C19.712 9.66394 22.6483 12.5383 22.6483 15.996H24.6483C24.6483 11.355 20.7361 7.66394 16 7.66394V9.66394ZM25.2445 6.30945C25.2445 6.31101 25.2444 6.31096 25.2441 6.31175C25.2434 6.31334 25.2407 6.31843 25.2338 6.32504C25.2199 6.33836 25.1947 6.35238 25.1566 6.35238V8.35238C26.2695 8.35238 27.2445 7.47711 27.2445 6.30945H25.2445ZM25.1566 6.35238C25.1185 6.35238 25.0932 6.33836 25.0793 6.32504C25.0724 6.31843 25.0698 6.31334 25.0691 6.31175C25.0687 6.31096 25.0687 6.31101 25.0687 6.30945H23.0687C23.0687 7.47711 24.0437 8.35238 25.1566 8.35238V6.35238ZM25.0687 6.30945C25.0687 6.3079 25.0687 6.30795 25.0691 6.30716C25.0698 6.30556 25.0724 6.30048 25.0793 6.29387C25.0932 6.28055 25.1185 6.26653 25.1566 6.26653V4.26653C24.0437 4.26653 23.0687 5.1418 23.0687 6.30945H25.0687ZM25.1566 6.26653C25.1947 6.26653 25.2199 6.28055 25.2338 6.29387C25.2407 6.30048 25.2434 6.30556 25.2441 6.30716C25.2444 6.30795 25.2445 6.3079 25.2445 6.30945H27.2445C27.2445 5.1418 26.2695 4.26653 25.1566 4.26653V6.26653Z" fill="#1C1C1C"></path>
+					</svg>
+				</a>
+			</li>
+			<li class="social__item">
+				<a href="#" class="social__link facebook">
+					<svg viewBox="0 0 22 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M15.2229 9.69542C15.2229 9.64178 15.4998 9.46552 16.3844 9.46552H19.2767C19.5025 9.46857 19.7267 9.42677 19.9361 9.34255C20.1455 9.25833 20.336 9.13337 20.4964 8.97499C20.6568 8.8166 20.784 8.62796 20.8704 8.42008C20.9568 8.2122 21.0008 7.98925 20.9997 7.76425V2.73708C21.0038 2.51302 20.9634 2.29037 20.8808 2.08191C20.7983 1.87345 20.6752 1.6833 20.5187 1.52237C20.3621 1.36143 20.1752 1.2329 19.9687 1.14414C19.7622 1.05538 19.54 1.00815 19.3151 1.00516H15.0075C13.812 0.964339 12.6208 1.16611 11.506 1.59822C10.3913 2.03032 9.37636 2.68374 8.52297 3.51874C7.69643 4.40701 7.05417 5.4492 6.63307 6.58545C6.21197 7.72171 6.02033 8.92964 6.06916 10.1399V14.6996H2.72305C2.49779 14.6986 2.27453 14.7418 2.06602 14.8267C1.85752 14.9117 1.66785 15.0367 1.50785 15.1947C1.34785 15.3527 1.22065 15.5405 1.13351 15.7475C1.04638 15.9544 1.00101 16.1764 1 16.4009V21.8189C1 22.268 1.1791 22.6988 1.49791 23.0164C1.81672 23.334 2.24911 23.5125 2.69998 23.5125H5.99224V35.2757C5.98606 35.7257 6.15904 36.1597 6.47332 36.4828C6.78759 36.806 7.21757 36.9919 7.66914 37H13.3229C13.5468 37 13.7685 36.9559 13.9752 36.8704C14.182 36.7848 14.3697 36.6593 14.5277 36.5013C14.6857 36.3432 14.8107 36.1556 14.8957 35.9492C14.9807 35.7428 15.0239 35.5218 15.0229 35.2987V23.5508H19.0459C19.4982 23.5488 19.9314 23.3689 20.2512 23.0503C20.571 22.7317 20.7515 22.3001 20.7536 21.8495V16.4239C20.7536 16.2008 20.7093 15.9799 20.6234 15.774C20.5375 15.568 20.4116 15.3809 20.2529 15.2236C20.0943 15.0662 19.906 14.9416 19.6988 14.857C19.4917 14.7723 19.2698 14.7292 19.0459 14.7303H15.046V10.7376C15.0031 10.3805 15.0645 10.0186 15.2229 9.69542Z" stroke="#1C1C1C" stroke-width="2" stroke-linecap="round"></path>
+					</svg>
+				</a>
+			</li>
+		</ul>
+		<div class="copyright wow animate__fadeIn" data-wow-duration="1s" data-wow-offset="50">
+			<div class="footer__logotype logotype">
+				<div class="logotype__title">Ekaterina Ranonis</div>
+				<div class="logotype__subtitle">skin care and makeup</div>
+			</div>
+			<div class="copyright__text">©2020 Ekaterina Ranonis</div>
+		</div>
+	</footer>
+	<!-- End Footer -->
+
+	
 	
 
 <!--#include virtual="/parts/footer.html" -->

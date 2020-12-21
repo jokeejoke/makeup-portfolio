@@ -35,7 +35,10 @@
 		"magnific-popup": "^1.1.0",
 		"page-scroll-to-id": "^1.6.5",
 		"simple-scrollspy": "^2.0.3",
-		"webpack-stream": "^6.1.1"
+		"webpack-stream": "^6.1.1",
+		"wow.js": "^1.2.2"
 	},
-	"dependencies": {}
+	"dependencies": {
+		"animate.css": "^4.1.1"
+	}
 }
