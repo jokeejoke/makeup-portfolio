@@ -80,4 +80,119 @@
     height: auto
     object-fit: cover
     border-radius: 4px 4px 25% 4px
+
+.aboutMe
+  position: relative
+  padding-top: 99px
+  &__title
+    text-align: center
+    margin-bottom: 87px
+  &__items
+    position: relative
+  &__item
+    margin-bottom: 90px
+    display: flex
+    &:nth-child(even)
+      flex-direction: row-reverse
+      .aboutMe__text
+        padding-left: 32px
+        padding-right: 0
+      .aboutMe__img::before
+        left: unset
+        top: 304px
+        right: -350px
+    &:last-child
+      margin-bottom: 0
+      .aboutMe__img::before
+        display: none
+  &__text
+    text-align: center
+    padding-right: 32px
+    padding-top: 106px
+    p
+      font-weight: 300
+      font-size: 18px
+      line-height: 32px
+      letter-spacing: 0.02em
+      max-width: 597px
+    &-bottom
+      padding-right: 0
+      padding-top: 0
+      margin-top: 65px
+      p
+        max-width: 100%
+        margin-bottom: 7px
+  &__img
+    position: relative
+    &::before
+      content: ''
+      position: absolute
+      top: 135px
+      left: -404px
+      display: block
+      width: 719px
+      height: 416px
+      border: 4px solid rgba(246, 226, 224, 0.5)
+      z-index: -1
+    img
+      width: 597px
+      height: 415px
+      object-fit: cover
+      z-index: 2
+
+.makeupKit
+  position: relative
+  padding-top: 154px
+  margin-bottom: -20px
+  &__title
+    text-align: center
+    margin-bottom: 87px
+  &__column
+    position: relative
+    display: flex
+  &__img
+    position: relative
+    width: 597px
+    height: 832px
+    object-fit: cover
+    margin-right: 32px
+    margin-bottom: 40px
+    &::before
+      content: ''
+      position: absolute
+      right: 50%
+      top: 25%
+      width: 661px
+      height: 416px
+      border: 4px solid rgba(246, 226, 224, 0.5)
+      z-index: 1
+      display: none
+  &__text
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    align-items: flex-end
+    padding-bottom: 40px
+    padding-top: 75px
+    p
+      font-size: 18px
+      font-weight: 300
+      line-height: 32px
+      text-align: center
+      letter-spacing: 0.02em
+  &__mainImg
+    width: 597px
+    height: 432px
+    object-fit: cover
+  &__images
+    position: relative
+    font-size: 0
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    .makeupKit__img:nth-child(even)
+      margin-right: 0
+      &::before
+        display: block
+        
       
