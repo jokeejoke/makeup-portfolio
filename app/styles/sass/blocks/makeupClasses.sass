@@ -1,0 +1,70 @@
+.makeupClasses
+  position: relative
+  padding-top: 99px
+  &__title
+    text-align: center
+    margin-bottom: 34px
+  &__text
+    text-align: center
+    margin-bottom: 93px
+    p
+      font-weight: 300
+      font-size: 18px
+      line-height: 32px
+      letter-spacing: 0.02em
+
+.slider
+  position: relative
+  &__container
+    width: 100%
+    height: 100%
+  &__link
+    position: relative
+    display: block
+    overflow: hidden
+    &::after
+      content: ''
+      position: absolute
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
+      background: rgba(0,0,0,.3)
+      opacity: 0
+      transition: $trs
+    &:hover::after
+      opacity: 1
+    &:hover
+      .slider__img
+        transform: scale(1.1)
+  &__img
+    max-width: 100%
+    height: 640px
+    width: 100%
+    object-fit: cover
+    transition: transform 3s ease
+  &__icon
+    position: relative
+  &__playIcon
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%,-50%)
+    z-index: 2
+    svg
+      width: 98px
+      height: 98px
+  &__pagination
+    position: relative
+    margin-top: 32px
+    font-size: 0
+    .swiper-pagination-bullet
+      width: 24px
+      height: 24px
+      background: transparent
+      border: 2px solid $textcolor
+      border-radius: 50%
+      opacity: 1
+      margin: 0 12px
+      &-active
+        background: $textcolor

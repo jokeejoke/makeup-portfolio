@@ -8,6 +8,7 @@
 	"devDependencies": {
 		"@babel/core": "^7.12.10",
 		"@babel/preset-env": "^7.12.10",
+		"@fancyapps/fancybox": "^3.5.7",
 		"babel-loader": "^8.2.2",
 		"babel-plugin-module-resolver": "^4.0.0",
 		"babel-plugin-root-import": "^6.6.0",
@@ -15,6 +16,7 @@
 		"browser-sync": "^2.26.13",
 		"browsersync-ssi": "^0.2.4",
 		"del": "^6.0.0",
+		"gsap": "^3.5.1",
 		"gulp": "^4.0.2",
 		"gulp-autoprefixer": "^7.0.1",
 		"gulp-clean-css": "^4.3.0",
@@ -35,6 +37,7 @@
 		"magnific-popup": "^1.1.0",
 		"page-scroll-to-id": "^1.6.5",
 		"simple-scrollspy": "^2.0.3",
+		"swiper": "^6.4.5",
 		"webpack-stream": "^6.1.1",
 		"wow.js": "^1.2.2"
 	},
