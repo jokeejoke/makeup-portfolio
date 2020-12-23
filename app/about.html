@@ -5,9 +5,9 @@
 <section class="aboutMe scrollspy" id="about">
   <div class="container">
     <div class="wrapper">
-      <div class="aboutMe__title section-title wow animate__fadeInUp" data-wow-duration="1s" data-wow-offset="100">About me</div>
+      <div class="aboutMe__title section-title">About me</div>
       <div class="aboutMe__items">
-        <div class="aboutMe__item wow animate__fadeIn" data-wow-duration="1s">
+        <div class="aboutMe__item">
           <div class="aboutMe__text">
             <p>I’m a licensed esthetician and makeup artist based in New York. I’ve been in the beauty industry <br> for 4 years.</p>
           </div>
@@ -18,7 +18,7 @@
             </picture>
           </div>
         </div>
-        <div class="aboutMe__item wow animate__fadeIn" data-wow-duration="1s">
+        <div class="aboutMe__item">
           <div class="aboutMe__text">
             <p>
               Here’s a bit more about my passion for beauty and skincare. Great makeup starts with great skin. I love helping people feel more confident with their skin. I perform customized facial treatments and laser hair removal.
@@ -31,7 +31,7 @@
             </picture>
           </div>
         </div>
-        <div class="aboutMe__item wow animate__fadeIn" data-wow-duration="1s">
+        <div class="aboutMe__item">
           <div class="aboutMe__text">
             <p>
               I also specialize in makeup. My artistic philosophy had always been to find the beauty of each individual rather than follow a trend. While my signature style is fresh and natural, I am able to create any look you desire.
@@ -45,7 +45,7 @@
           </div>
         </div>
       </div>
-      <div class="aboutMe__text aboutMe__text-bottom wow animate__fadeInUp" data-wow-duration="1s">
+      <div class="aboutMe__text aboutMe__text-bottom">
         <p>
           I look forward to meeting you! I will help you look and feel your best!
         </p>
@@ -59,16 +59,18 @@
   <section class="makeupKit">
     <div class="container">
       <div class="wrapper">
-        <div class="makeupKit__title section-title wow animate__fadeInUp" data-wow-duration="1s">My makeup kit</div>
-        <div class="makeupKit__wrapper">
-          <div class="makeupKit__column">
-            <div class="makeupKit__img wow animate__fadeIn" data-wow-duration="1s">
+        <div class="makeupKit__title section-title">My makeup kit</div>
+        <div class="row d-flex flex-column-reverse flex-lg-row">
+          <div class="col-lg-6">
+            <div class="makeupKit__img">
               <picture>
                 <source srcset="images/dist/kit/pic1.webp" type="image/webp">
-                <img src="images/dist/kit/pic1.png" alt="Alt" class="makeupKit__img">
+                <img src="images/dist/kit/pic1.png" alt="Alt">
               </picture>
             </div>
-            <div class="makeupKit__text wow animate__fadeIn" data-wow-duration="1s">
+          </div>
+          <div class="col-lg-6">
+            <div class="makeupKit__text">
               <p>
                 I use only the best products and brushes, carefully chosen and always personally tried and tested. My makeup kit includes trusted brands such as Tom Ford, Charlotte Tilbury, YSL, Dolce & Gabbana, Dior, Giorgio Armani, Becca, La Mer, etc.
               </p>
@@ -78,33 +80,75 @@
               </picture>
             </div>
           </div>
-          <div class="makeupKit__images">
-            <div class="makeupKit__img wow animate__fadeIn" data-wow-duration="1s">
+        </div>
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="makeupKit__img">
+              <picture>
+                <source srcset="images/dist/kit/pic1.webp" type="image/webp">
+                <img src="images/dist/kit/pic1.png" alt="Alt">
+              </picture>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="makeupKit__img">
               <picture>
                 <source srcset="images/dist/kit/pic3.webp" type="image/webp">
-                <img src="images/dist/kit/pic3.png" alt="Alt" class="makeupKit__img">
+                <img src="images/dist/kit/pic3.png" alt="Alt">
               </picture>
             </div>
-            <div class="makeupKit__img wow animate__fadeIn" data-wow-duration="1s">
+          </div>
+          <div class="col-lg-6">
+            <div class="makeupKit__img">
               <picture>
                 <source srcset="images/dist/kit/pic4.webp" type="image/webp">
-                <img src="images/dist/kit/pic4.png" alt="Alt" class="makeupKit__img">
+                <img src="images/dist/kit/pic4.png" alt="Alt">
               </picture>
             </div>
-            <div class="makeupKit__img wow animate__fadeIn" data-wow-duration="1s">
+          </div>
+          <div class="col-lg-6">
+            <div class="makeupKit__img">
               <picture>
                 <source srcset="images/dist/kit/pic5.webp" type="image/webp">
-                <img src="images/dist/kit/pic5.png" alt="Alt" class="makeupKit__img">
-              </picture>
-            </div>
-            <div class="makeupKit__img wow animate__fadeIn" data-wow-duration="1s">
-              <picture>
-                <source srcset="images/dist/kit/pic6.webp" type="image/webp">
-                <img src="images/dist/kit/pic6.png" alt="Alt" class="makeupKit__img">
+                <img src="images/dist/kit/pic5.png" alt="Alt">
               </picture>
             </div>
           </div>
         </div>
+
+        <!--
+        <div class="makeupKit__wrapper">
+          <div class="makeupKit__column">
+            
+          </div>
+          <div class="makeupKit__images">
+            <div class="makeupKit__img">
+              <picture>
+                <source srcset="images/dist/kit/pic3.webp" type="image/webp">
+                <img src="images/dist/kit/pic3.png" alt="Alt">
+              </picture>
+            </div>
+            <div class="makeupKit__img">
+              <picture>
+                <source srcset="images/dist/kit/pic4.webp" type="image/webp">
+                <img src="images/dist/kit/pic4.png" alt="Alt">
+              </picture>
+            </div>
+            <div class="makeupKit__img">
+              <picture>
+                <source srcset="images/dist/kit/pic5.webp" type="image/webp">
+                <img src="images/dist/kit/pic5.png" alt="Alt">
+              </picture>
+            </div>
+            <div class="makeupKit__img">
+              <picture>
+                <source srcset="images/dist/kit/pic6.webp" type="image/webp">
+                <img src="images/dist/kit/pic6.png" alt="Alt">
+              </picture>
+            </div>
+          </div>
+        </div>
+      -->
       </div>
     </div>
   </section>
