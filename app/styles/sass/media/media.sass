@@ -41,6 +41,14 @@
     height: 92px
   .services
     padding-top: 135px
+  .images__item img
+    height: 360px
+  .images
+    padding-top: 74px
+  .servicePage__wrapper
+    padding: 0 50px
+  .servicesList__images
+    flex: 0 0 555px
 
 @media screen and ( max-width: 1280px )
   .container
@@ -88,6 +96,8 @@
     height: 88px
   .makeupClasses
     padding-top: 75px
+  .images__item img
+    height: 328px
 @media screen and ( max-width: 1024px )
   .container
     max-width: 858px !important
@@ -178,6 +188,28 @@
   .slider__playIcon svg
     width: 88px
     height: 88px
+  .images__item img
+    height: 280px
+  .images__title
+    margin-bottom: 63px
+  .servicePage__wrapper
+    padding: 0
+  .servicePage__image
+    flex: 0 0 413px
+  .servicePage__text
+    max-width: 100%
+  .servicePage
+    padding-bottom: 127px
+  .servicePage__image::after
+    right: -275px
+  .servicesList__images
+    flex: 0 0 413px
+  .servicesList__image::after
+    width: 529px
+    height: 306px
+    left: -170px
+  .servicesList__item:nth-child(even) .servicesList__image::after
+    right: -165px
   
 @media screen and ( max-width: 992px )
   .aboutMe__title
@@ -229,6 +261,32 @@
     margin-bottom: 30px
   .services
     padding-top: 107px
+  .images__item img
+    height: 560px
+  .servicePage__image
+    flex: 0 0 336px
+  .servicePage__text
+    padding-top: 20px
+  .servicePage__image::after
+    width: 459px
+    height: 264px
+    top: 215px
+    right: -370px
+  .servicesList .servicesList__header
+    border-bottom: none
+  .servicesList__title
+    border-bottom: 1px solid rgba(0,0,0,.2)
+  .servicesList__images
+    flex: 0 0 336px
+  .servicesList__image:first-child::after
+    width: 459px
+    height: 342px
+    display: block
+    top: 90px
+  .servicesList__image::after
+    display: none
+  .servicesList .servicesList__header.accordion__header-active .servicesList__title
+    border-bottom: none
 
 @media screen and ( max-width: 768px )
   .container
@@ -328,6 +386,51 @@
     padding-top: 67px
   .slider__img
     height: 368px
+  .images__item img
+    height: 420px
+  .images
+    padding-top: 67px
+  .images__title
+    margin-bottom: 49px
+  .servicePage
+    padding-top: 56px
+  .servicePage__title
+    margin-bottom: 35px
+  .servicePage__wrapper
+    flex-direction: column
+  .servicePage__image::after
+    display: none
+  .servicePage__image
+    text-align: center
+  .servicePage__text
+    margin-left: 0
+    padding-top: 0
+    margin-top: 34px
+    text-align: center
+  .servicePage
+    padding-bottom: 50px
+  .servicesList__flex, .servicesList__item:nth-child(even) .servicesList__flex
+    flex-direction: column
+  .servicesList__image:first-child::after
+    display: none
+  .servicesList .servicesList__text
+    margin-right: 0
+    max-width: 100%
+    text-align: center
+  .servicesList .servicesList__content
+    padding: 25px 0
+  .servicesList__images
+    margin-top: 40px
+    flex: 0 0 100%
+  .servicesList .servicesList__header
+    height: 100%
+    line-height: 1.6
+  .servicesList__title
+    padding: 34px 0
+  .servicesList__item:nth-child(even) .servicesList__text
+    margin-left: 0
+  .servicePage__text p, .servicesList .servicesList__text p
+    font-size: 16px
   
 
 @media screen and ( max-width: 640px )
@@ -375,6 +478,10 @@
     height: 20px
   .slider__pagination
     margin-top: 24px
+  
+@media screen and ( max-width: 576px )
+  .images__item img
+    height: 560px
 
 @media screen and ( max-width: 480px )
   .banner, .banner__image img
@@ -444,6 +551,14 @@
   .slider__playIcon svg
     width: 60px
     height: 60px
+  .images
+    padding-top: 45px
+  .images__title
+    margin-bottom: 41px
+  .servicesList .servicesList__header, .servicesList__textTitle
+    font-size: 16px
+  .servicesList__title svg
+    margin-left: 20px
 
 @media screen and ( max-width: 380px )
   .banner__title
@@ -453,6 +568,8 @@
     max-width: 195px!important
   .about
     padding-top: 106px !important
+  .banner
+    z-index: 1
   .banner__btn
     position: absolute
     bottom: -100px
@@ -533,6 +650,12 @@
     margin: 0 8px
   .slider__pagination
     margin-top: 16px
+  .images__item img
+    height: 390px
+  .images
+    padding-top: 40px
+  .images__title
+    margin-bottom: 32px
   
 @media screen and ( max-width: 320px )
   .portfolio__title

@@ -13,6 +13,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	// gsap animation
 	gsap.registerPlugin(ScrollTrigger);
+	gsap.config({
+		nullTargetWarn: false
+	})
 
 	scrollSpy('.header', {
 		offset: 128
@@ -107,9 +110,17 @@ document.addEventListener('DOMContentLoaded', () => {
 		})
 		gsap.from('.banner__title', { y: 100, duration: 2, opacity: 0 })
 		gsap.fromTo('.banner__btn', { y: -100, duration: 2, opacity: 0 }, {y: 0, opacity: 1})
-		gsap.from('.aboutMe__title', {duration: 2, y: 50, opacity: 0})
+		gsap.from('.aboutMe__title', {duration: 2, y: -100, opacity: 0})
 		gsap.from('.aboutMe__text', {duration: 1.5, opacity: 0, y: 50})
 		gsap.from('.aboutMe__img', {duration: 1.5, opacity: 0, y: -50, delay: 0.5})
+		gsap.from('.makeupClasses__title', { y: -100, duration: 2, opacity: 0 })
+		gsap.from('.makeupClasses__text', { y: 100, duration: 2, opacity: 0, delay: 0.5 })
+		gsap.from('.slider', { scale: 0, duration: 2, opacity: 0, delay: 1 })
+		gsap.from('.images__title', { y: -100, duration: 2, opacity: 0})
+		gsap.from('.images__item', { duration: 1, opacity: 0, stagger: 0.5})
+		gsap.from('.servicePage__title', { y: -100, duration: 2, opacity: 0})
+		gsap.from('.servicePage__image', { y: 100, duration: 1, opacity: 0, delay: 0.5})
+		gsap.from('.servicePage__text', { y: -100, duration: 1, opacity: 0, delay: 1})
 	}
 
 	function aboutMeAnimation() {
@@ -132,7 +143,15 @@ document.addEventListener('DOMContentLoaded', () => {
 			}
 		})
 		anim.from('.services__title', { y: 200, opacity: 0, duration: 1.5 })
-		anim.from('.accordion__item', { y: 200, opacity: 0, duration: 1, stagger: 0.2 }, '-=1')
+		anim.from('.services .accordion__item', { y: 200, opacity: 0, duration: 1, stagger: 0.2 }, '-=1')
+	}
+	function servicesListAnimation() {
+		const anim = gsap.timeline({
+			scrollTrigger: {
+				trigger: '.servicesList'
+			}
+		})
+		anim.from('.servicesList .servicesList__item', { y: 200, opacity: 0, duration: 1, stagger: 0.2 })
 	}
 	function contactsAnimation() {
 		const anim = gsap.timeline({
@@ -166,5 +185,6 @@ document.addEventListener('DOMContentLoaded', () => {
 	servicesAnimation()
 	contactsAnimation()
 	kitAnimation()
+	servicesListAnimation()
 
 })
