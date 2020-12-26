@@ -76,6 +76,17 @@ document.addEventListener('DOMContentLoaded', () => {
 		})
 	}
 
+	function mobileAccordion() {
+		const $acc = document.querySelectorAll('.accordion__header')
+		const $accBody = document.querySelector('.accordion__body')
+		$acc.forEach(item => {
+			item.addEventListener('click', function () {
+				this.classList.toggle('accordion__header-active')
+				this.nextElementSibling.classList.toggle('accordion__body-active')
+			})
+		})
+	}
+
 	function hamburgerMenu() {
 		const $hamburgerBtnWrap = document.querySelector('.mobileHamburger')
 		const $hamburgerBtn = document.querySelector('.hamburger')
@@ -177,7 +188,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	chooseLang('.nav__link.lang', '.choose-lang')
 	chooseLang('.moblie-choose-lang .nav__link', '.moblie-choose-lang .choose-lang')
-	accordion()
+	
 	hamburgerMenu()
 	loaderAnimation()
 	sitenimation()
@@ -186,5 +197,11 @@ document.addEventListener('DOMContentLoaded', () => {
 	contactsAnimation()
 	kitAnimation()
 	servicesListAnimation()
+	
+	if(window.innerWidth >= 768) {
+		accordion()
+	} else {
+		mobileAccordion()
+	}
 
 })
