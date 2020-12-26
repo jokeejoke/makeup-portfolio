@@ -418,7 +418,10 @@
     max-width: 100%
     text-align: center
   .servicesList .servicesList__content
-    padding: 25px 0
+    padding: 25px 0 0 0
+    border-bottom: none
+  .servicesList__flex
+    border-bottom: 1px solid rgba(0,0,0,.2)
   .servicesList__images
     margin-top: 40px
     flex: 0 0 100%
@@ -431,6 +434,8 @@
     margin-left: 0
   .servicePage__text p, .servicesList .servicesList__text p
     font-size: 16px
+  .accordion__header::after
+    right: 35px
   
 
 @media screen and ( max-width: 640px )
@@ -501,7 +506,11 @@
   .header.active .logotype
     top: 21px
   .accordion__header::after
-    right: 15px
+    right: 25px
+    width: 30px
+    height: 30px
+  .accordion__header-active::after
+    height: 2px
   .portfolio
     flex-direction: column
   .portfolio__title
@@ -559,6 +568,8 @@
     font-size: 16px
   .servicesList__title svg
     margin-left: 20px
+  .accordion__body
+    overflow: auto
 
 @media screen and ( max-width: 380px )
   .banner__title
@@ -656,6 +667,12 @@
     padding-top: 40px
   .images__title
     margin-bottom: 32px
+  .accordion__header::after
+    right: 20px
+    width: 22px
+    height: 22px
+  .accordion__header-active::after
+    height: 2px
   
 @media screen and ( max-width: 320px )
   .portfolio__title

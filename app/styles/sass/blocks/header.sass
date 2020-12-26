@@ -32,12 +32,11 @@
     position: relative
   &__link
     text-transform: uppercase
-    display: inline-block
+    display: block
     color: $textcolor
     letter-spacing: 0.5px
     padding: 12px 24px
     transition: $trs
-    scroll-behavior: smooth
     &:hover
       text-decoration: none
       background: #FBECEA
@@ -55,6 +54,7 @@
   left: 0
   transform: scale(0)
   transition: $trs
+  width: -webkit-fill-available
   &.show
     transform: scale(1)
   li
@@ -131,19 +131,25 @@
 .logotype
   position: absolute
   top: 5px
-  left: 49%
+  left: 50%
   transform: translate(-50%, 50%)
   font-family: Arimo
   color: $textcolor
   transition: $trs
+  display: block
+  &:hover
+    text-decoration: none
+    color: $textcolor
   &__title
     font-size: 22px
     text-transform: uppercase
     letter-spacing: 0.05em
+    display: block
   &__subtitle
     font-size: 12px
     text-transform: uppercase
     letter-spacing: 0.43em
+    display: block
 
 .loader
   position: absolute
