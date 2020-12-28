@@ -54,6 +54,10 @@
         top: 190px
         left: unset
         right: -340px
+      .servicesList__image.single::after
+        top: 5%
+        left: unset
+        right: -340px
   .servicesList__header
     position: relative
     background: transparent
@@ -117,6 +121,11 @@
       z-index: -1
     &:last-child::after
       display: none
+    &:first-child::after
+      display: block
+    &.single::after
+      top: 5%
+      height: 100%
     img
       max-width: 100%
       height: auto

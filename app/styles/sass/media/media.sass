@@ -229,10 +229,16 @@
   .aboutMe__img
     text-align: center
   .aboutMe__img::before
-    display: none
+    width: 50%
+    height: 288px
+    top: unset
+    left: 50%
+    transform: translateX(-50%)
+    bottom: -220px
   .aboutMe__item:nth-child(even) .aboutMe__img::before
     top: unset
-    left: 29%
+    left: 50%
+    bottom: -220px
   .aboutMe__item
     margin-bottom: 50px
   .aboutMe__item:nth-child(even) .aboutMe__text
@@ -283,10 +289,19 @@
     height: 342px
     display: block
     top: 90px
+  .servicesList__image.single::after
+    top: 5% !important
+    height: 100% !important
+    width: 100% !important
+  .servicesList__item:nth-child(even) .servicesList__image.single::after
+    right: -75%
   .servicesList__image::after
     display: none
   .servicesList .servicesList__header.accordion__header-active .servicesList__title
     border-bottom: none
+  .banner__title
+    font-size: 54px !important
+    max-width: 390px !important
 
 @media screen and ( max-width: 768px )
   .container
@@ -399,7 +414,12 @@
   .servicePage__wrapper
     flex-direction: column
   .servicePage__image::after
-    display: none
+    width: 90%
+    height: 226px
+    top: unset
+    right: 50%
+    transform: translateX(50%)
+    bottom: -50px
   .servicePage__image
     text-align: center
   .servicePage__text
@@ -412,7 +432,24 @@
   .servicesList__flex, .servicesList__item:nth-child(even) .servicesList__flex
     flex-direction: column
   .servicesList__image:first-child::after
-    display: none
+    width: 105%
+    height: 120%
+    bottom: -50%
+    top: unset
+    left: -50%
+    transform: translateX(45%)
+  .servicesList__item:nth-child(even) .servicesList__image::after
+    right: unset
+    top: unset
+    left: -50%
+  .servicesList__image.single::after
+    height: 50% !important
+    top: -25% !important
+    width: 105% !important
+  .servicesList__item:nth-child(even) .servicesList__image.single::after
+    right: 50%
+    transform: translateX(50%)
+
   .servicesList .servicesList__text
     margin-right: 0
     max-width: 100%
@@ -485,19 +522,26 @@
     height: 20px
   .slider__pagination
     margin-top: 24px
+  .banner__title
+    font-size: 38px !important
+    max-width: 275px !important
   
 @media screen and ( max-width: 576px )
   .images__item img
     height: 560px
+  .servicePage__image::after
+    width: 60%
+    height: 244px
+    bottom: -186px
 
 @media screen and ( max-width: 480px )
   .banner, .banner__image img
     min-height: 256px !important
   .banner__title
-    font-size: 36px !important
+    font-size: 28px !important
     margin-top: 19px !important
     line-height: 48px !important
-    max-width: 255px!important
+    max-width: 170px!important
   .accordion__content a:not(.portfolio__item), .btn
     width: 169px !important
     font-size: 16px
@@ -536,7 +580,7 @@
   .aboutMe__title
     margin-bottom: 19px
   .aboutMe__text
-    margin-bottom: 38px
+    margin-bottom: 50px
   .aboutMe__img img, .makeupKit__mainImg
     width: 100%
   .aboutMe__text-bottom
@@ -570,20 +614,27 @@
     font-size: 16px
   .servicesList__title svg
     margin-left: 20px
+  .aboutMe__img::before
+    width: 70%
+    height: 288px
+    top: unset
+    left: 50%
+    transform: translateX(-50%)
+    bottom: -220px
 
 @media screen and ( max-width: 380px )
   .banner__title
-    font-size: 28px !important
+    font-size: 22px !important
     margin-top: 44px !important
-    line-height: 40px !important
-    max-width: 195px!important
+    line-height: 36px !important
+    max-width: 146px!important
   .about
     padding-top: 106px !important
   .banner
     z-index: 1
   .banner__btn
     position: absolute
-    bottom: -100px
+    bottom: -115px
     left: 16px
     width: 91% !important
   .accordion__content a:not(.portfolio__item), .btn
