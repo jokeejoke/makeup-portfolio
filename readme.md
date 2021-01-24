@@ -1,4 +1,4 @@
-<h1>Gulp4 Starter</h1>
+<h1>Сайт портфолио. Верстка и посадка на October CMS.</h1>
 
 <img src="./app/mockup.png" alt="Makeup Portfolio" />
 
